@@ -1,2 +1,2 @@
-str = "KUSHNIR";
-print str.lower()
+response = input("Please enter your name: ")
+print(str.lower(response))

@@ -1,2 +1,2 @@
-str = "dima";
-print str.upper()
+response = input("Please enter your name: ")
+print(str.upper(response))
