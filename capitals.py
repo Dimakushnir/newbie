@@ -1,2 +1,2 @@
-response = input("Please enter your name: ")
-print(str.upper(response))
+data = input('Please enter name: ')
+print(data.upper())
