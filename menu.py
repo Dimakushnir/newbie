@@ -7,21 +7,15 @@ def showmenu ():
     selected_option = int(raw_input('Select an option: '))
     return selected_option
 
-
-
 def reversed_string (string):
     reversed_message = string[::-1]
     return reversed_message
 
 def uppercase_string (value):
-    return = a
+    return value.upper()
 
-
-def lowercase_string ():
-    data = raw_input('Print lowercased string: ')
-    print(data.lower())
-
-
+def lowercase_string (value):
+    return value.lower()
 
 def mainmenu ():
     loop_iterator = ''
@@ -29,16 +23,15 @@ def mainmenu ():
         option = showmenu()
         if option == 1:
             entered_data = raw_input('Print reversed string: ')
-            a = reversed_string(entered_data)
-            print(a)
+            print(reversed_string(entered_data))
 
         elif option == 2:
             entered_data = raw_input('Print uppercased string: ')
-            b = uppercase_string(entered_data)
-            print(b)
+            print(uppercase_string(entered_data))
 
         elif option == 3:
-            lowercase_string()
+            entered_data = raw_input('Print lowercased string: ')
+            print(lowercase_string(entered_data))
 
         elif option == 0:
             loop_iterator = option
