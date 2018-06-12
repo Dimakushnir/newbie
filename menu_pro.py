@@ -45,13 +45,11 @@ def mainmenu():
 
         elif option == 4:
             entered_data = raw_input('Print vertical string')
-            print(vertical_string(entered_data))
+            vertical_string(entered_data)
 
         elif option == 0:
             loop_iterator = option
         else:
             print('Invalid selection!')
     return loop_iterator
-
-
 mainmenu()
