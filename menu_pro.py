@@ -3,13 +3,14 @@ def showmenu():
     print ('1. Print reversed string')
     print ('2. Print uppercased string')
     print ('3. Print lowercased string')
+    print ('4. Print vertical string')
     print ('0. Exit')
     selected_option = int(raw_input('Select an option: '))
     return selected_option
 
 
-def reversed_string(string):
-    reversed_message = string[::-1]
+def reversed_string(value):
+    reversed_message = value[::-1]
     return reversed_message
 
 
@@ -19,6 +20,11 @@ def uppercase_string(value):
 
 def lowercase_string(value):
     return value.lower()
+
+
+def vertical_string(value):
+    for character in value:
+        print(character)
 
 
 def mainmenu():
@@ -37,12 +43,9 @@ def mainmenu():
             entered_data = raw_input('Print lowercased string: ')
             print(lowercase_string(entered_data))
 
-
-#from itertools import zip_longest
-#text = "John Seener"
-#for x in zip_longest(*text.split(), fillvalue=' '):
-#    print (' '.join(x))
-
+        elif option == 4:
+            entered_data = raw_input('Print vertical string')
+            print(vertical_string(entered_data))
 
         elif option == 0:
             loop_iterator = option
